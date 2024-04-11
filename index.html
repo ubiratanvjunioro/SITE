@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        /* Estilos para o menu de navegação */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        /* Estilos para as fotos */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .gallery img {
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            transition: 0.3s;
+        }
+        
+        .gallery img:hover {
+            border-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#gallery">Galeria</a></li>
+  <li><a href="#about">Sobre</a></li>
+  <li><a href="#contact">Contato</a></li>
+</ul>
+
+<div id="home">
+  <h2>Home</h2>
+  <p>Bem-vindo à página inicial do meu site!</p>
+</div>
+
+<div id="gallery">
+  <h2>Galeria</h2>
+  <div class="gallery">
+    <img src="imagem1.jpg" alt="Imagem 1">
+    <img src="imagem2.jpg" alt="Imagem 2">
+    <img src="imagem3.jpg" alt="Imagem 3">
+    <!-- Adicione mais imagens conforme necessário -->
+  </div>
+</div>
+
+<div id="about">
+  <h2>Sobre</h2>
+  <p>Esta é uma breve descrição sobre mim ou sobre o meu site.</p>
+</div>
+
+<div id="contact">
+  <h2>Contato</h2>
+  <p>Você pode me contatar através do seguinte email: meuemail@example.com</p>
+</div>
+
+</body>
+</html>
